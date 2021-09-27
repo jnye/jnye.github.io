@@ -2,23 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Josh Nye</title>
-    <link>https://www.joshnye.com/</link>
+    <link>https://www.josnye.com/</link>
     <description>Recent content on Josh Nye</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 27 Sep 2021 18:53:13 -0400</lastBuildDate>
     
-	<atom:link href="https://www.joshnye.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.josnye.com/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://www.joshnye.com/posts/my-first-post/</link>
-      <pubDate>Mon, 27 Sep 2021 18:53:13 -0400</pubDate>
-      
-      <guid>https://www.joshnye.com/posts/my-first-post/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
