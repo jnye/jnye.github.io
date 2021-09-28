@@ -4,18 +4,18 @@ hide empty methods
 hide empty fields 
 hide empty description
 
-[*] --> Testing
+[*] --> Play
 
-Testing --> Happy
-Testing --> Unhappy
+Play --> Learn
+Play --> Create
 
-Happy --> [*]
+Learn --> Create
+Learn --> Play
+Learn --> Learn
 
-Unhappy --> Thinking
-
-Thinking --> Fixing
-
-Fixing --> Testing 
+Create --> Play
+Create --> Learn
+Create --> Create
 
 @enduml
 
