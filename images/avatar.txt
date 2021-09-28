@@ -1,15 +1,21 @@
 @startuml
 hide circle
-hide empty fields
 hide empty methods
+hide empty fields 
+hide empty description
 
-Happy -down-> Unhappy
+[*] --> Testing
 
-Unhappy -right-> Thinking
+Testing --> Happy
+Testing --> Unhappy
 
-Thinking -up-> Fixing
+Happy --> [*]
 
-Fixing -left-> Happy
+Unhappy --> Thinking
+
+Thinking --> Fixing
+
+Fixing --> Testing 
 
 @enduml
 
