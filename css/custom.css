@@ -1,4 +1,5 @@
 .avatar img {
 	width: auto;
-	border-radius: 10%;
+	height: auto;
+	border-radius: 0;
 }
