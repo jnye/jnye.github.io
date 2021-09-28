@@ -7,15 +7,12 @@ hide empty description
 [*] --> Play
 
 Play --> Learn
-Play --> Create
 
 Learn --> Create
-Learn --> Play
-Learn --> Learn
 
-Create --> Play
-Create --> Learn
-Create --> Create
+Create --> Teach
+
+Teach --> Play
 
 @enduml
 
