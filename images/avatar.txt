@@ -1,0 +1,15 @@
+@startuml
+hide circle
+hide empty fields
+hide empty methods
+
+Happy -down-> Unhappy
+
+Unhappy -right-> Thinking
+
+Thinking -up-> Fixing
+
+Fixing -left-> Happy
+
+@enduml
+

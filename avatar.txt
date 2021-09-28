@@ -1,0 +1,6 @@
+@startuml
+[*] --> Hungry
+Hungry --> Eating
+Eating --> [*]
+@enduml
+
