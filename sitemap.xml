@@ -2,10 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.josnye.com/categories/</loc>
+    <loc>https://www.joshnye.com/</loc>
+    <lastmod>2021-07-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.josnye.com/</loc>
+    <loc>https://www.joshnye.com/projects/</loc>
+    <lastmod>2021-07-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.josnye.com/tags/</loc>
+    <loc>https://www.joshnye.com/garden/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.joshnye.com/library/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.joshnye.com/about/</loc>
+    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.joshnye.com/garden_tags/</loc>
+  </url><url>
+    <loc>https://www.joshnye.com/library_tags/</loc>
+  </url><url>
+    <loc>https://www.joshnye.com/project_tags/</loc>
   </url>
 </urlset>

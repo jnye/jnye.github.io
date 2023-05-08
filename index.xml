@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Josh Nye</title>
-    <link>https://www.josnye.com/</link>
-    <description>Recent content on Josh Nye</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://www.josnye.com/index.xml" rel="self" type="application/rss+xml" />
+    <title>My Digital Garden</title>
+    <link>https://www.joshnye.com/</link>
+    <description>Recent content on My Digital Garden</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Joshua Nye ©</copyright>
+    <lastBuildDate>Sat, 31 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.joshnye.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Joshua Nye</title>
+      <link>https://www.joshnye.com/about/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joshnye.com/about/</guid>
+      <description>Software Engineer</description>
+    </item>
+    
   </channel>
 </rss>
