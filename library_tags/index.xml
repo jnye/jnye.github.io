@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Library_tags on My Digital Garden</title>
-    <link>https://www.joshnye.com/library_tags/</link>
+    <link>/library_tags/</link>
     <description>Recent content in Library_tags on My Digital Garden</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Joshua Nye ©</copyright>
-    <lastBuildDate>Thu, 21 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.joshnye.com/library_tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/library_tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>domain-driven-design</title>
-      <link>https://www.joshnye.com/library_tags/domain-driven-design/</link>
+      <link>/library_tags/domain-driven-design/</link>
       <pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.joshnye.com/library_tags/domain-driven-design/</guid>
+      <guid>/library_tags/domain-driven-design/</guid>
       <description></description>
     </item>
     
     <item>
       <title>design-patterns</title>
-      <link>https://www.joshnye.com/library_tags/design-patterns/</link>
+      <link>/library_tags/design-patterns/</link>
       <pubDate>Wed, 22 Jan 2003 00:00:00 +0000</pubDate>
       
-      <guid>https://www.joshnye.com/library_tags/design-patterns/</guid>
+      <guid>/library_tags/design-patterns/</guid>
       <description></description>
     </item>
     

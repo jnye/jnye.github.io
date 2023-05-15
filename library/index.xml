@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Library on My Digital Garden</title>
-    <link>https://www.joshnye.com/library/</link>
+    <link>/library/</link>
     <description>Recent content in Library on My Digital Garden</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Joshua Nye ©</copyright>
-    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.joshnye.com/library/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/library/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Implementing Domain-Driven Design</title>
-      <link>https://www.joshnye.com/library/implementing-domain-driven-design/</link>
+      <link>/library/implementing-domain-driven-design/</link>
       <pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.joshnye.com/library/implementing-domain-driven-design/</guid>
+      <guid>/library/implementing-domain-driven-design/</guid>
       <description>An in-depth guide that provides both theoretical understanding and practical examples for effectively applying Domain-Driven Design principles in software development projects</description>
     </item>
     
     <item>
       <title>Domain-Driven Design: Tackling Complexity in the Heart of Software</title>
-      <link>https://www.joshnye.com/library/domain-driven-design/</link>
+      <link>/library/domain-driven-design/</link>
       <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.joshnye.com/library/domain-driven-design/</guid>
+      <guid>/library/domain-driven-design/</guid>
       <description>A foundational book that introduces and thoroughly explores the principles and practices of Domain-Driven Design as a strategic approach to manage complexity in software development.</description>
     </item>
     
     <item>
       <title>Design Patterns: Elements of Reusable Object-Oriented Software</title>
-      <link>https://www.joshnye.com/library/design-patterns/</link>
+      <link>/library/design-patterns/</link>
       <pubDate>Wed, 22 Jan 2003 00:00:00 +0000</pubDate>
       
-      <guid>https://www.joshnye.com/library/design-patterns/</guid>
+      <guid>/library/design-patterns/</guid>
       <description>A foundational text in software engineering, providing a comprehensive introduction to 23 classic design patterns that serve as enduring, language-agnostic solutions for common programming problems.</description>
     </item>
     

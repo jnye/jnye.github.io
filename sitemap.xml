@@ -2,41 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.joshnye.com/library_tags/domain-driven-design/</loc>
+    <loc>/garden_tags/</loc>
+    <lastmod>2023-01-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/garden_tags/mentoring/</loc>
+    <lastmod>2023-01-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2023-01-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/garden/nurturing-talent/</loc>
+    <lastmod>2023-01-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/library_tags/domain-driven-design/</loc>
     <lastmod>2021-10-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.joshnye.com/library/implementing-domain-driven-design/</loc>
+    <loc>/library/implementing-domain-driven-design/</loc>
     <lastmod>2021-10-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.joshnye.com/library_tags/</loc>
+    <loc>/library_tags/</loc>
     <lastmod>2021-10-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.joshnye.com/</loc>
-    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.joshnye.com/library/domain-driven-design/</loc>
+    <loc>/library/domain-driven-design/</loc>
     <lastmod>2021-10-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.joshnye.com/projects/</loc>
+    <loc>/projects/</loc>
     <lastmod>2021-07-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.joshnye.com/garden/</loc>
+    <loc>/garden/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.joshnye.com/library/</loc>
+    <loc>/library/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.joshnye.com/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.joshnye.com/library/design-patterns/</loc>
+    <loc>/library/design-patterns/</loc>
     <lastmod>2003-01-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.joshnye.com/library_tags/design-patterns/</loc>
+    <loc>/library_tags/design-patterns/</loc>
     <lastmod>2003-01-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.joshnye.com/garden_tags/</loc>
-  </url><url>
-    <loc>https://www.joshnye.com/project_tags/</loc>
+    <loc>/project_tags/</loc>
   </url>
 </urlset>

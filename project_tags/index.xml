@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Project_tags on My Digital Garden</title>
-    <link>https://www.joshnye.com/project_tags/</link>
+    <link>/project_tags/</link>
     <description>Recent content in Project_tags on My Digital Garden</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Joshua Nye ©</copyright><atom:link href="https://www.joshnye.com/project_tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Joshua Nye ©</copyright><atom:link href="/project_tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
