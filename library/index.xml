@@ -26,5 +26,14 @@
       <description>A foundational book that introduces and thoroughly explores the principles and practices of Domain-Driven Design as a strategic approach to manage complexity in software development.</description>
     </item>
     
+    <item>
+      <title>Design Patterns: Elements of Reusable Object-Oriented Software</title>
+      <link>https://www.joshnye.com/library/design-patterns/</link>
+      <pubDate>Wed, 22 Jan 2003 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.joshnye.com/library/design-patterns/</guid>
+      <description>A foundational text in software engineering, providing a comprehensive introduction to 23 classic design patterns that serve as enduring, language-agnostic solutions for common programming problems.</description>
+    </item>
+    
   </channel>
 </rss>
