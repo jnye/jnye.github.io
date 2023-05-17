@@ -18,6 +18,15 @@
     </item>
     
     <item>
+      <title>Active Record vs. Data Mapper: Navigating PHP ORM Patterns with Eloquent and Doctrine</title>
+      <link>/garden/active-record-vs-data-mapper/</link>
+      <pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/garden/active-record-vs-data-mapper/</guid>
+      <description>Comparing and contrasting the Active Record and Data Mapper patterns, as implemented in PHP by Eloquent and Doctrine ORM respectively, highlighting their different approaches to managing data persistence and the pros and cons of each.</description>
+    </item>
+    
+    <item>
       <title>Nurturing Talent: A Guide to Mentoring Junior Software Developers</title>
       <link>/garden/nurturing-talent/</link>
       <pubDate>Thu, 17 Feb 2022 00:00:00 +0000</pubDate>
