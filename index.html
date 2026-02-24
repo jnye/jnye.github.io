@@ -1,283 +1,399 @@
 <!DOCTYPE html>
-<html><head>
-	<meta name="generator" content="Hugo 0.92.2" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JP43RV35Z"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-5JP43RV35Z');
-    </script>
-    
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
-    <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/css/my_style.css">
-    
-    
-    
-    <title>My Digital Garden</title>
-    <meta name="description" content="Software engineer living in the Berkshires.">
-</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="/">
-            
-            <b style="font-weight: 800;">JN</b>
-            
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josh Nye — Senior Software Engineer</title>
+  <meta name="description" content="Portfolio of Josh Nye, a senior software engineer with 25+ years of experience shipping production code.">
+  <meta name="author" content="Josh Nye">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Josh Nye — Senior Software Engineer">
+  <meta property="og:description" content="25+ years of shipping production code. Full-stack engineer, architect, and lifelong learner.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://joshnye.com">
+  <meta property="og:image" content="https://joshnye.com/assets/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS v4 CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#0B0F19',
+            surface: '#111827',
+            accent: '#6366F1',
+            'accent-hover': '#818CF8',
+            muted: '#9CA3AF',
+            divider: '#1F2937',
+          },
+          fontFamily: {
+            mono: ['JetBrains Mono', 'monospace'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body class="bg-bg text-gray-200 font-sans antialiased">
+
+  <!-- ============================================ -->
+  <!-- NAV -->
+  <!-- ============================================ -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#hero" class="font-mono text-xl font-bold text-white">
+        josh<span class="text-accent">nye</span>.com
+      </a>
+
+      <!-- Desktop nav -->
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <li><a href="#about" class="nav-link hover:text-accent transition-colors">About</a></li>
+        <li><a href="#experience" class="nav-link hover:text-accent transition-colors">Experience</a></li>
+        <li><a href="#work" class="nav-link hover:text-accent transition-colors">Work</a></li>
+        <li><a href="#contact" class="nav-link hover:text-accent transition-colors">Contact</a></li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+      <button id="menu-toggle" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+        <span class="block w-6 h-0.5 bg-white transition-all duration-300 origin-center" id="bar1"></span>
+        <span class="block w-6 h-0.5 bg-white transition-all duration-300" id="bar2"></span>
+        <span class="block w-6 h-0.5 bg-white transition-all duration-300 origin-center" id="bar3"></span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-surface/95 backdrop-blur-md border-t border-divider">
+      <ul class="flex flex-col items-center gap-6 py-8 text-lg font-medium">
+        <li><a href="#about" class="mobile-nav-link hover:text-accent transition-colors">About</a></li>
+        <li><a href="#experience" class="mobile-nav-link hover:text-accent transition-colors">Experience</a></li>
+        <li><a href="#work" class="mobile-nav-link hover:text-accent transition-colors">Work</a></li>
+        <li><a href="#contact" class="mobile-nav-link hover:text-accent transition-colors">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============================================ -->
+  <!-- HERO -->
+  <!-- ============================================ -->
+  <section id="hero" class="min-h-screen flex items-center pt-20">
+    <div class="max-w-6xl mx-auto px-6 py-20">
+      <div>
+        <h1 class="text-4xl sm:text-5xl lg:text-7xl font-mono font-bold text-white leading-tight mb-6">
+          <span class="hero-word" style="--i:0">Full-Stack</span> <span class="hero-word" style="--i:1">Engineer.</span><br>
+          <span class="text-accent"><span class="hero-word" style="--i:2">Problem</span> <span class="hero-word" style="--i:3">First,</span> <span class="hero-word" style="--i:4">Code</span> <span class="hero-word" style="--i:5">Second.</span></span>
+        </h1>
+        <p class="text-lg sm:text-xl text-muted max-w-2xl mb-10 leading-relaxed" data-animate="fade-up" data-delay="1500">
+          I spend more time understanding what to build than writing the code to build it. 25 years of shipping software across clean energy, education, and media.
+        </p>
+        <div class="flex flex-wrap gap-4" data-animate="fade-up" data-delay="1700">
+          <a href="#work" class="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-semibold px-6 py-3 rounded-lg transition-colors">
+            See What I've Shipped
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <a href="#contact" class="inline-flex items-center gap-2 border border-divider hover:border-accent text-white font-semibold px-6 py-3 rounded-lg transition-colors">
+            Get In Touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- ABOUT -->
+  <!-- ============================================ -->
+  <section id="about" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <span class="font-mono text-accent text-sm mb-2 block" data-animate="fade-up">// about</span>
+      <h2 class="text-3xl sm:text-4xl font-mono font-bold text-white mb-12" data-animate="fade-up" data-delay="100">Always a Student.</h2>
+
+      <div class="grid md:grid-cols-5 gap-12">
+        <!-- Narrative -->
+        <div class="md:col-span-3 space-y-6 text-muted leading-relaxed" data-animate="fade-up" data-delay="200">
+          <p>
+            I've been building things for the web since the late '90s — from auto racing classifieds to clean energy platforms to education technology. The tools have changed constantly, but the work has always been the same: figure out what the business needs and build software that delivers it.
+          </p>
+          <p>
+            I'm not interested in just shipping features. I want to sit down with the people who need the software, figure out what they actually need, and build something that works so well they forget it's there. That means caring about the architecture underneath as much as the interface on top.
+          </p>
+          <p>
+            Right now I'm a senior engineer at Guidewell Education, working remotely from the Berkshires. I've never been the kind of developer who stops at the API boundary.
+          </p>
+        </div>
+
+        <!-- Stats card -->
+        <div class="md:col-span-2 bg-surface rounded-xl border border-divider p-8 h-fit" data-animate="fade-up" data-delay="300">
+          <div class="grid grid-cols-2 gap-8">
+            <div>
+              <div class="text-3xl font-mono font-bold text-white">25+</div>
+              <div class="text-sm text-muted mt-1">Years in tech</div>
+            </div>
+            <div>
+              <div class="text-3xl font-mono font-bold text-white">13+</div>
+              <div class="text-sm text-muted mt-1">Years remote</div>
+            </div>
+            <div>
+              <div class="text-3xl font-mono font-bold text-white">Full</div>
+              <div class="text-sm text-muted mt-1">Stack engineer</div>
+            </div>
+            <div>
+              <div class="text-3xl font-mono font-bold text-white">3</div>
+              <div class="text-sm text-muted mt-1">SaaS platforms built</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- How I Work -->
+      <div class="mt-16 space-y-6 text-muted leading-relaxed max-w-3xl" data-animate="fade-up" data-delay="400">
+        <h3 class="text-2xl font-mono font-bold text-white mb-4">How I Work.</h3>
+        <p>
+          I'd rather spend a day on schema design than a week on query optimization. The best systems I've built started with long conversations — not about technology, but about the problem. What does the user actually need? What does the business care about in six months? Only then do I start thinking about code.
+        </p>
+        <p>
+          My career arc — ISP sysadmin to DevOps to full-stack to lead engineer — means I'm comfortable at every layer of the stack. I've racked servers in co-location facilities, debugged production MySQL at 2 AM, designed REST APIs, and shipped Vue.js frontends. That range isn't about being a generalist for its own sake. It means when I'm building a backend service, I'm thinking about how it deploys, how it scales, and how the frontend will consume it.
+        </p>
+        <p>
+          I've worked remotely for over a decade, mostly on small teams where autonomy isn't optional — it's the job. I don't need a standup to stay on track. I communicate clearly, document decisions, and ship consistently.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- EXPERIENCE / TIMELINE -->
+  <!-- ============================================ -->
+  <section id="experience" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <span class="font-mono text-accent text-sm mb-2 block" data-animate="fade-up">// experience</span>
+      <h2 class="text-3xl sm:text-4xl font-mono font-bold text-white mb-16" data-animate="fade-up" data-delay="100">Where I've Been.</h2>
+
+      <div class="timeline relative">
+        <!-- Timeline line -->
+        <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-divider md:-translate-x-px"></div>
+
+        <!-- Entry 1: Guidewell Education -->
+        <div class="timeline-entry mb-12 relative pl-12 md:pl-0 md:w-1/2 md:pr-12 md:ml-auto md:text-left" data-animate="fade-left" data-delay="100">
+          <div class="timeline-dot absolute left-[13px] md:left-auto md:-left-[9px] top-2 w-4 h-4 rounded-full bg-accent border-4 border-bg z-10"></div>
+          <div class="bg-surface rounded-xl border border-divider p-6 hover:border-accent/50 transition-colors">
+            <span class="text-sm text-muted font-mono">2023 — Present</span>
+            <h3 class="text-lg font-bold text-white mt-1">Senior Software Engineer — Guidewell Education</h3>
+            <p class="text-muted mt-2 text-sm leading-relaxed">Building education technology products as a senior engineer, working remotely from the Berkshires, Massachusetts.</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">PHP</span>
+              <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">Laravel</span>
+              <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">Vue.js</span>
+              <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">Livewire</span>
+              <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 2: Sustaine -->
+        <div class="timeline-entry mb-12 relative pl-12 md:pl-0 md:w-1/2 md:pl-12 md:mr-auto" data-animate="fade-right" data-delay="150">
+          <div class="timeline-dot absolute left-[13px] md:left-auto md:-right-[9px] top-2 w-4 h-4 rounded-full bg-accent border-4 border-bg z-10"></div>
+          <div class="bg-surface rounded-xl border border-divider p-6 hover:border-accent/50 transition-colors">
+            <span class="text-sm text-muted font-mono">2013 — 2023</span>
+            <h3 class="text-lg font-bold text-white mt-1">Senior Software Engineer — Sustaine</h3>
+            <p class="text-muted mt-2 text-sm leading-relaxed">Led engineering on multiple clean energy SaaS products from inception to launch, working across Laravel, Spring Boot, Vue.js, and AWS.</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">Laravel</span>
+              <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">Vue.js</span>
+              <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">Spring Boot</span>
+              <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 3: Internet Brands -->
+        <div class="timeline-entry mb-12 relative pl-12 md:pl-0 md:w-1/2 md:pr-12 md:ml-auto" data-animate="fade-left" data-delay="200">
+          <div class="timeline-dot absolute left-[13px] md:left-auto md:-left-[9px] top-2 w-4 h-4 rounded-full bg-accent border-4 border-bg z-10"></div>
+          <div class="bg-surface rounded-xl border border-divider p-6 hover:border-accent/50 transition-colors">
+            <span class="text-sm text-muted font-mono">2012 — 2013</span>
+            <h3 class="text-lg font-bold text-white mt-1">Senior PHP Developer — Internet Brands</h3>
+            <p class="text-muted mt-2 text-sm leading-relaxed">Lead developer for the auto classifieds division. Migrated externally hosted sites to internal servers and transitioned legacy platforms to the Laravel framework with zero downtime.</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">PHP</span>
+              <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">Laravel</span>
+              <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 4: Raceway Media -->
+        <div class="timeline-entry mb-12 relative pl-12 md:pl-0 md:w-1/2 md:pl-12 md:mr-auto" data-animate="fade-right" data-delay="250">
+          <div class="timeline-dot absolute left-[13px] md:left-auto md:-right-[9px] top-2 w-4 h-4 rounded-full bg-accent border-4 border-bg z-10"></div>
+          <div class="bg-surface rounded-xl border border-divider p-6 hover:border-accent/50 transition-colors">
+            <span class="text-sm text-muted font-mono">2005 — 2012</span>
+            <h3 class="text-lg font-bold text-white mt-1">DevOps Engineer — Raceway Media</h3>
+            <p class="text-muted mt-2 text-sm leading-relaxed">Lead developer and operations engineer on a small team responsible for a large auto racing classifieds site. Managed feature development and cloud/co-located server infrastructure.</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">PHP</span>
+              <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">Linux</span>
+              <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">MySQL</span>
+              <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">DevOps</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 5: Boxcar Media -->
+        <div class="timeline-entry mb-12 relative pl-12 md:pl-0 md:w-1/2 md:pr-12 md:ml-auto" data-animate="fade-left" data-delay="300">
+          <div class="timeline-dot absolute left-[13px] md:left-auto md:-left-[9px] top-2 w-4 h-4 rounded-full bg-accent border-4 border-bg z-10"></div>
+          <div class="bg-surface rounded-xl border border-divider p-6 hover:border-accent/50 transition-colors">
+            <span class="text-sm text-muted font-mono">2001 — 2005</span>
+            <h3 class="text-lg font-bold text-white mt-1">DevOps Engineer — Boxcar Media</h3>
+            <p class="text-muted mt-2 text-sm leading-relaxed">Lead developer and operations engineer for a media and hosting company. Built new features and sites, configured and monitored co-located web and database servers.</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">PHP</span>
+              <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">Linux</span>
+              <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">Apache</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- WHAT I'VE SHIPPED -->
+  <!-- ============================================ -->
+  <section id="work" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <span class="font-mono text-accent text-sm mb-2 block" data-animate="fade-up">// work</span>
+      <h2 class="text-3xl sm:text-4xl font-mono font-bold text-white mb-12" data-animate="fade-up" data-delay="100">What I've Shipped.</h2>
+
+      <div class="grid gap-8 max-w-3xl">
+
+        <!-- Case Study 1: Guidewell Education Business Manager -->
+        <div class="bg-surface rounded-xl border border-divider p-8 hover:border-accent/50 transition-colors" data-animate="fade-up" data-delay="150">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">Guidewell Education</span>
+            <span class="text-xs text-muted font-mono">Laravel + Vue.js + Livewire + MySQL + AWS</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-3">Education Services Operations Platform</h3>
+          <div class="space-y-2 text-sm text-muted leading-relaxed">
+            <p><span class="text-gray-300 font-medium">Challenge:</span> A large, established education services platform needed modernization and new features across multiple international business units — class scheduling, student enrollment, billing, CRM, e-commerce, HR, and recruiting — while maintaining per-tenant customization across distinct client configurations.</p>
+            <p><span class="text-gray-300 font-medium">Approach:</span> Joined as a senior developer on a large, established Laravel codebase and kept it moving forward. Built new features across domain modules while modernizing the platform — multi-tenant architecture with subdomain routing and isolated databases, background job processing, full-text search with tenant-scoped indexing, Stripe payment processing, and a hooks system for per-client behavior without forking the codebase.</p>
+            <p><span class="text-gray-300 font-medium">Result:</span> A production SaaS platform that powers daily operations across multiple business units — from enrollment and payroll to deal pipelines and order fulfillment.</p>
+          </div>
+        </div>
+
+        <!-- Case Study 2: Sustaine Utility Platform -->
+        <div class="bg-surface rounded-xl border border-divider p-8 hover:border-accent/50 transition-colors" data-animate="fade-up" data-delay="200">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">Sustaine</span>
+            <span class="text-xs text-muted font-mono">Laravel + Vue.js + MySQL + AWS</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-3">Renewable Energy Brokerage Platform</h3>
+          <div class="space-y-2 text-sm text-muted leading-relaxed">
+            <p><span class="text-gray-300 font-medium">Challenge:</span> Energy brokers needed a way to analyze customer utility bills, model savings across renewable asset types (solar, storage, demand management, geothermal), and manage the full sales pipeline from lead intake through project approval.</p>
+            <p><span class="text-gray-300 font-medium">Approach:</span> Built a multi-tenant SaaS platform with Laravel and Vue.js. Designed a configurable savings calculation engine with scoped formula evaluation, a bill analysis pipeline that extracts usage, demand, cost, and carbon metrics across rate structures, and token-secured PDF generation for proposals and assessments. Added role-based access for brokers and agents, with event-driven email automation at pipeline milestones.</p>
+            <p><span class="text-gray-300 font-medium">Result:</span> A production SaaS product that brokers use to score renewable energy opportunities, generate proposals, and track commissions — deployed on AWS Elastic Beanstalk with S3-backed document storage.</p>
+          </div>
+        </div>
+
+        <!-- Case Study 3: DR2 Solutions Energy Platform -->
+        <div class="bg-surface rounded-xl border border-divider p-8 hover:border-accent/50 transition-colors" data-animate="fade-up" data-delay="250">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">DR2 Solutions</span>
+            <span class="text-xs text-muted font-mono">Spring Boot + GraphQL + MySQL + AWS</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-3">Energy Utility Customer Engagement Platform</h3>
+          <div class="space-y-2 text-sm text-muted leading-relaxed">
+            <p><span class="text-gray-300 font-medium">Challenge:</span> Energy retailers and utilities needed a backend to power customer acquisition, run targeted marketing campaigns driven by real meter data, and track engagement across product offers and rebate programs.</p>
+            <p><span class="text-gray-300 font-medium">Approach:</span> Built a B2B SaaS API with Spring Boot and GraphQL. Designed an automated meter data pipeline (SFTP ingestion, CSV parsing, scheduled jobs), a campaign delivery engine with scenario-based customer targeting, and a flexible offer system supporting rebates, contracts, and usage-based email outreach. Integrated with AWS S3/SES for file management and delivery, with open and click tracking on every send.</p>
+            <p><span class="text-gray-300 font-medium">Result:</span> A production platform used by energy service companies to run targeted engagement programs, track customer orders through their full lifecycle, and measure campaign conversions.</p>
+          </div>
+        </div>
+
+        <!-- Case Study 4: Internet Brands Migration -->
+        <div class="bg-surface rounded-xl border border-divider p-8 hover:border-accent/50 transition-colors" data-animate="fade-up" data-delay="350">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">Internet Brands</span>
+            <span class="text-xs text-muted font-mono">PHP + Laravel + MySQL</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-3">Zero-Downtime Legacy Migration</h3>
+          <div class="space-y-2 text-sm text-muted leading-relaxed">
+            <p><span class="text-gray-300 font-medium">Challenge:</span> A high-traffic auto classifieds division was running on legacy code hosted on external servers — difficult to maintain, expensive to operate, and risky to migrate.</p>
+            <p><span class="text-gray-300 font-medium">Approach:</span> Planned and executed a phased migration: moved hosting to internal infrastructure, then systematically transitioned the codebase from legacy PHP to Laravel — all without taking the site offline.</p>
+            <p><span class="text-gray-300 font-medium">Result:</span> Completed the full migration with zero downtime for end users. The modernized codebase was easier to maintain and extend.</p>
+          </div>
+        </div>
+
+        <!-- Case Study 5: RacingJunk -->
+        <div class="bg-surface rounded-xl border border-divider p-8 hover:border-accent/50 transition-colors" data-animate="fade-up" data-delay="400">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-xs font-mono bg-accent/10 text-accent px-2 py-1 rounded">Raceway Media</span>
+            <span class="text-xs text-muted font-mono">PHP + MySQL + AWS + S3</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-3">RacingJunk.com — Auto Racing Classifieds Platform</h3>
+          <div class="space-y-2 text-sm text-muted leading-relaxed">
+            <p><span class="text-gray-300 font-medium">Challenge:</span> Build and grow the leading online classifieds platform for the performance racing industry — race cars, parts, trailers, engines — from the ground up on a small team.</p>
+            <p><span class="text-gray-300 font-medium">Approach:</span> Was part of the team from early development through the site's growth into a high-traffic platform. Built features across the full stack — listings, search, user accounts, ad management — while also managing the server infrastructure. Handled both the code and the ops as the site scaled.</p>
+            <p><span class="text-gray-300 font-medium">Result:</span> RacingJunk grew to over 2.6 million monthly visitors and 70 million page views, becoming the largest racing classifieds site in the industry. The site was eventually acquired by Internet Brands.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- CONTACT -->
+  <!-- ============================================ -->
+  <section id="contact" class="py-24">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <span class="font-mono text-accent text-sm mb-2 block" data-animate="fade-up">// contact</span>
+      <h2 class="text-3xl sm:text-4xl font-mono font-bold text-white mb-6" data-animate="fade-up" data-delay="100">Let's Build Something.</h2>
+      <p class="text-muted text-lg max-w-xl mx-auto mb-10" data-animate="fade-up" data-delay="200">
+        I'm always interested in challenging problems and great teams. Drop me a line.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4" data-animate="fade-up" data-delay="300">
+        <a href="mailto:hello@joshnye.com" class="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-semibold px-8 py-4 rounded-lg transition-colors text-lg">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+          hello@joshnye.com
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
-                    <a class="nav-link" href="/garden/"> Digital Garden</a>
-                </li>
-            <li class='nav-item '>
-                    <a class="nav-link" href="/projects/"> Projects</a>
-                </li>
-            <li class='nav-item '>
-                    <a class="nav-link" href="/library/"> Library</a>
-                </li>
-            <li class='nav-item '>
-                    <a class="nav-link" href="/about/"> About</a>
-                </li>
-             
-            <li class="nav-item px-2 pt-1">
-                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
-            </li>
-            </ul>
-        </div>
+        <a href="https://linkedin.com/in/joshua-nye" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-divider hover:border-accent text-white font-semibold px-8 py-4 rounded-lg transition-colors text-lg">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+      </div>
     </div>
-</nav><div id="content">
+  </section>
 
-<div class="mt-5 pt-5 pb-1">
-    <div class="container" >
-       	<h1 class="name display-1"><b>Josh Nye</b></h1>
+  <!-- ============================================ -->
+  <!-- FOOTER -->
+  <!-- ============================================ -->
+  <footer class="border-t border-divider py-8">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-muted">&copy; 2026 Josh Nye. All rights reserved.</p>
+      <div class="flex items-center gap-6">
+        <a href="https://github.com/jnye" target="_blank" rel="noopener" class="text-muted hover:text-accent transition-colors" aria-label="GitHub">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/joshua-nye" target="_blank" rel="noopener" class="text-muted hover:text-accent transition-colors" aria-label="LinkedIn">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
     </div>
-</div>
-<div class="mb-5 py-4">
-    <div class="container">
-        <h2 class="bio lh-base fs-1 serif">Software engineer living in the Berkshires.</h2>
-    </div>
-</div>
+  </footer>
 
-<div class="container py-3">
-	<div class="row justify-content-between my-5">
-		
-		<div class="col-lg-4">
-			
-          	<div class="pb-4">
-              	<a class="heading fs-2" href="/garden/">Digital Garden</a>
-          	</div>      
-			 <p class="subheading">A collection of thoughts and articles at different development stages</p> 
-			
-			<div class="row row-cols-1 g-4 mb-5">
-				
-				<div class="col">
-    <div class="card h-100 top-highlight">
-        <div class="card-body">
-            <div class="row justify-content-between">
-                <div class="col-8">
-                    <h5 class="card-title">PHP 8.3: Bringing Improved JSON Validation</h5>
-                    
-                </div>
-                <div class="col-4 ">
-                    <p class="card-right">
-                        <span class="card-date">May 17, 2023 </span>
-                        <br/>
-    
-    <span class="status">Seeding 🌱</span>
-    
-
-                    </p>
-                </div>
-            </div>
-            <a href="/garden/json-validation-in-php-8-3/" class="stretched-link"></a>
-        </div>
-    </div>   
-</div>   
-				
-				<div class="col">
-    <div class="card h-100 top-highlight">
-        <div class="card-body">
-            <div class="row justify-content-between">
-                <div class="col-8">
-                    <h5 class="card-title">Active Record vs. Data Mapper: Navigating PHP ORM Patterns with Eloquent and Doctrine</h5>
-                    
-                </div>
-                <div class="col-4 ">
-                    <p class="card-right">
-                        <span class="card-date">Jul 22, 2022 </span>
-                        <br/>
-    
-    <span class="status">Growing 🌿</span>
-    
-
-                    </p>
-                </div>
-            </div>
-            <a href="/garden/active-record-vs-data-mapper/" class="stretched-link"></a>
-        </div>
-    </div>   
-</div>   
-				
-				<div class="col">
-    <div class="card h-100 top-highlight">
-        <div class="card-body">
-            <div class="row justify-content-between">
-                <div class="col-8">
-                    <h5 class="card-title">Nurturing Talent: A Guide to Mentoring Junior Software Developers</h5>
-                    
-                </div>
-                <div class="col-4 ">
-                    <p class="card-right">
-                        <span class="card-date">Jan 17, 2023 </span>
-                        <br/>
-    
-    <span class="status">Evergreen 🌳</span>
-    
-
-                    </p>
-                </div>
-            </div>
-            <a href="/garden/nurturing-talent/" class="stretched-link"></a>
-        </div>
-    </div>   
-</div>   
-				
-      		</div>
-			
-			<div class="d-flex flex-row-reverse">
-        		<a href="/garden/" role="button" class="btn btn-sm see-all">See all articles</a>
-      		</div>
-      		
-		</div>
-    	
-		
-		<div class="col-lg-7">
-			
-			<div class="pb-4">
-				<a class="heading fs-2" href="/projects/">Projects</a>
-			</div>          
-			 
-			<p class="subheading">Discover what I do in my spare time</p> 
-			
-			
-			<div class="row row-cols-1 row-cols-md-2 g-4 mb-5" data-masonry='{"percentPosition": true }'>
-				
-    		</div>
-			
-			<div class="d-flex flex-row-reverse">
-				<a href="/projects/" role="button" class="btn btn-sm see-all">See all projects</a>
-			</div>    
-			
-  		</div>
-	</div>
-
-	
-	<div class="container py-3">
-		<div class="row justify-content-between my-5">
-			<div class="col-sm-4 col-lg-3">
-				
-				<div class="pb-4">
-					<a class="heading fs-2" href="/library/">Library</a>
-				</div>
-				 <p class="subheading">Notes on some of the books I enjoyed reading</p> 
-				<div class="d-flex">
-					<a href="/library/" role="button" class="btn btn-sm see-all">See all books</a>
-				</div>
-				
-			</div>
-			<div class="col me-auto">
-				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
-					
-					<div class="col">
-						<div class="card">
-							
-							
-							
-							<img src="/library/implementing-domain-driven-design/featured_hue2af3f50589ffdba3ae14789d77c4c08_82097_350x500_fit_q75_box.jpg" alt="My Digital Garden" class="card-img-top">
-							
-							<div class="card-body">
-								<h5 class="card-title">Implementing Domain-Driven Design</h5>
-								<p class="card-text">
-									<figcaption class="blockquote-footer">Vaughn Vernon</figcaption>
-								</p>
-								<a href="/library/implementing-domain-driven-design/" class="stretched-link"></a>
-							</div>
-						</div>  
-					</div>
-					
-					<div class="col">
-						<div class="card">
-							
-							
-							
-							<img src="/library/domain-driven-design/featured_hub1512d375ee5fee2cb14288242963899_72130_350x500_fit_q75_box.jpg" alt="My Digital Garden" class="card-img-top">
-							
-							<div class="card-body">
-								<h5 class="card-title">Domain-Driven Design: Tackling Complexity in the Heart of Software</h5>
-								<p class="card-text">
-									<figcaption class="blockquote-footer">Eric Evans</figcaption>
-								</p>
-								<a href="/library/domain-driven-design/" class="stretched-link"></a>
-							</div>
-						</div>  
-					</div>
-					
-					<div class="col">
-						<div class="card">
-							
-							
-							
-							<img src="/library/design-patterns/featured_hud3bd5beaeb210d3840b34481015683bd_36288_350x500_fit_q75_box.jpg" alt="My Digital Garden" class="card-img-top">
-							
-							<div class="card-body">
-								<h5 class="card-title">Design Patterns: Elements of Reusable Object-Oriented Software</h5>
-								<p class="card-text">
-									<figcaption class="blockquote-footer">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides</figcaption>
-								</p>
-								<a href="/library/design-patterns/" class="stretched-link"></a>
-							</div>
-						</div>  
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-        </div><div class="container">
-    <div class="row justify-content-between">
-        <div class="col-sm-4">
-            <p class="footer">Joshua Nye © 2023 </p>
-        </div>
-        <div class="col-sm-6 d-flex flex-row-reverse">
-            
-            <a class="footer-social px-2"  href="https://www.github.com/jnye" target="_blank"><i class="fab fa-github"></i></a>
-            
-            <a class="footer-social px-2"  href="https://www.linkedin.com/in/joshua-nye/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            
-        </div>
-    </div>
-</div>
-<script src="/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/js/jquery.min.js"></script>
-<script src="/js/isotope.pkgd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-<script src="/js/dark.js"></script>
-<script src="/js/isotope.js"></script>
-<script src="/js/mermaid.min.js"></script>
-<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script></body>
+  <!-- Scripts -->
+  <script src="./js/animations.js"></script>
+  <script src="./js/app.js"></script>
+</body>
 </html>
